@@ -123,58 +123,222 @@
         <!-- Tab panes -->
         <div class="tab-content">
             <div class="tab-pane container active" id="y2019">
-                2019
+                <!-- age -->
+                <div class="row">
+                    <div class="col-2">Age</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_age">
+                            <option value="25">(25 Points) at least 18 but less than 25 years</option>
+                            <option value="30">(30 Points) at least  25 but less than 33 years</option>
+                            <option value="25">(25 Points) at least  33 but less than 40 years</option>
+                            <option value="15">(15 Points) at least  40 but less than 45 years</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- english -->
+                <div class="row">
+                    <div class="col-2">English</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_english">
+                            <option value="0">(0 Points) Competent (IELTS 6, PTE 50)</option>
+                            <option value="10">(10 Points) Proficient (IELTS 7, PTE 65)</option>
+                            <option value="20">(20 Points) Superior (IELTS 8, PTE 79)</option>
+                        </select>
+                    </div>
+                </div>
 
+                <!-- overseas job -->
+                <div class="row">
+                    <div class="col-2">Overseas job</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_overseas_job">
+                            <option value="0">(0 Points) Less than 3 years</option>
+                            <option value="5">(5 Points) At least 3 but less than 5 years</option>
+                            <option value="10">(10 Points) At least 5 but less than 8 years</option>
+                            <option value="15">(15 Points) At least 8 years</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- australian job -->
+                <div class="row">
+                    <div class="col-2">Australia job</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_aus_job">
+                            <option value="0">(0 Points) Less than 1 year</option>
+                            <option value="5">(5 Points) At least 1 but less than 3 years</option>
+                            <option value="10">(10 Points) At least 3 but less than 5 years</option>
+                            <option value="15">(15 Points) At least 5 but less than 8 years</option>
+                            <option value="20">(20 Points) At least 8 years</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- degrees -->
+                <div class="row">
+                    <div class="col-2">Degrees</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_degree">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="10">(10 Points) Assessed Qualification</option>
+                            <option value="10">(10 Points) Australian Diploma</option>
+                            <option value="15">(15 Points) Masters/Bachelor</option>
+                            <option value="20">(20 Points) PhD</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Aus research degrees -->
+                <div class="row">
+                    <div class="col-2">Australian Research</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_aus_research">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Australian postgraduate degree by research</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Aus study -->
+                <div class="row">
+                    <div class="col-2">Australian Study</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_aus_study">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Australian degree</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Professional year -->
+                <div class="row">
+                    <div class="col-2">Professional Year</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_py">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Professional Year</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- NAATI-->
+                <div class="row">
+                    <div class="col-2">NAATI</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_naati">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Qualification in a credentialled community language</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Regional Australia -->
+                <div class="row">
+                    <div class="col-2">Regional Australia</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_regional_aus">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Study in regional Australia</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Nomination -->
+                <div class="row">
+                    <div class="col-2">Nomination(190)</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_state_nomination">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) State nomination for subclass 190</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Regional Nomination -->
+                <div class="row">
+                    <div class="col-2">Nomination(489)</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_regional_nomination">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="10">(10 Points) Regional state nomination for subclass 489</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Partner -->
+                <div class="row">
+                    <div class="col-2">Partner skills</div>
+                    <div class="col-10">
+                        <select class="custom-select" id="pr_partner">
+                            <option value="0">(0 Points) N/A</option>
+                            <option value="5">(5 Points) Partner meets age, English and skill criteria</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!--BUTTON -->
+                <div class="row">
+                    <div class="col-2">
+                        <button class="btn btn-primary" onclick="sum();">SUM</button>
+                    </div>
+                    <div class="col-10">
+                        <div class="alert alert-success" role="alert" id="pr_sum_points">
+                            Your Points.
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="tab-pane container fade" id="y2020">
-                <p>Recently published legislation introduces changes to the Points Test for General Skilled Migration
-                    visas
-                    commencing <strong>16 November 2019</strong><b>.</b><br/>
-                    These changes are relevant to existing Subclass 489,189 and 190 and the <strong>new Skilled Work
-                        Regional (Provisional) Subclass 491 visa</strong>, which will also commence in 16 November 2019.
-                </p>
-                <p>The changes to the points test will include:</p>
-                <ul>
-                    <li><strong>10 points</strong> for Specialist Educational qualifications. Currently 5 points.</li>
-                    <li><strong>10 points</strong> for applicants with a skilled spouse or de facto partner (under 45
-                        with
-                        Competent English, suitable skills assessment and with an occupation on the same skilled
-                        occupation
-                        list). Currently 5 points.
-                    </li>
-                    <li><strong>10 points</strong> for applicants who do not have a spouse or de facto partner or who
-                        have a
-                        spouse or de facto partner who is an Australian citizen or a Permanent resident
-                        <strong>(New)</strong></li>
-                    <li><strong>5 points</strong> for applicants with a spouse or de facto partner who has competent
-                        English<strong>
-                            (New)</strong></li>
-                    <li><strong>15 points</strong> for applicants who are nominated by a State or Territory government,
-                        or
-                        who are sponsored by a suitable family member. These points are relevant to applicants for a
-                        Subclass 489 visa or the new Subclass 491 visa. Currently 10 points.
-                    </li>
-                </ul>
-                <p>When all points except partner qualifications are equal, invitations will be ranked in the below
-                    order:</p>
-                <ul>
-                    <li>First: applicants with a skilled spouse or de facto partner.</li>
-                    <li>Equal First: applicants without a spouse or de facto partner.</li>
-                    <li>Second: applicants with a spouse or de facto partner who demonstrates Competent English but who
-                        does
-                        not have the skills to obtain skilled partner points.
-                    </li>
-                    <li>Third: Applicants with a spouse or de facto partner who is ineligible for either competent
-                        English
-                        or Skilled partner points.
-                    </li>
-                </ul>
-                <p>References: <a href="https://www.legislation.gov.au/Details/F2019L00578">Link 1</a>, <a
-                        href="https://www.legislation.gov.au/Details/F2019L00578/Explanatory%20Statement/Text">Link
-                    2</a>
-                </p>
-                <p><strong>I will construct the new calculator when the new rules published officially!</strong></p>
+                <div class="text-justify">
+                    <p>Recently published legislation introduces changes to the Points Test for General Skilled Migration
+                        visas
+                        commencing <strong>16 November 2019</strong><b>.</b><br/>
+                        These changes are relevant to existing Subclass 489,189 and 190 and the <strong>new Skilled Work
+                            Regional (Provisional) Subclass 491 visa</strong>, which will also commence in 16 November 2019.
+                    </p>
+                    <p>The changes to the points test will include:</p>
+                    <ul>
+                        <li><strong>10 points</strong> for Specialist Educational qualifications. Currently 5 points.</li>
+                        <li><strong>10 points</strong> for applicants with a skilled spouse or de facto partner (under 45
+                            with
+                            Competent English, suitable skills assessment and with an occupation on the same skilled
+                            occupation
+                            list). Currently 5 points.
+                        </li>
+                        <li><strong>10 points</strong> for applicants who do not have a spouse or de facto partner or who
+                            have a
+                            spouse or de facto partner who is an Australian citizen or a Permanent resident
+                            <strong>(New)</strong></li>
+                        <li><strong>5 points</strong> for applicants with a spouse or de facto partner who has competent
+                            English<strong>
+                                (New)</strong></li>
+                        <li><strong>15 points</strong> for applicants who are nominated by a State or Territory government,
+                            or
+                            who are sponsored by a suitable family member. These points are relevant to applicants for a
+                            Subclass 489 visa or the new Subclass 491 visa. Currently 10 points.
+                        </li>
+                    </ul>
+                    <p>When all points except partner qualifications are equal, invitations will be ranked in the below
+                        order:</p>
+                    <ul>
+                        <li>First: applicants with a skilled spouse or de facto partner.</li>
+                        <li>Equal First: applicants without a spouse or de facto partner.</li>
+                        <li>Second: applicants with a spouse or de facto partner who demonstrates Competent English but who
+                            does
+                            not have the skills to obtain skilled partner points.
+                        </li>
+                        <li>Third: Applicants with a spouse or de facto partner who is ineligible for either competent
+                            English
+                            or Skilled partner points.
+                        </li>
+                    </ul>
+                    <p>References: <a href="https://www.legislation.gov.au/Details/F2019L00578">Link 1</a>, <a
+                            href="https://www.legislation.gov.au/Details/F2019L00578/Explanatory%20Statement/Text">Link
+                        2</a>
+                    </p>
+                    <p><strong>I will construct the new calculator when the new rules published officially!</strong></p>
+                </div>
             </div>
             <div class="tab-pane container fade" id="y2021">
                 2021 is in the future!
