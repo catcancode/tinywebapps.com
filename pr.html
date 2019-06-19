@@ -75,7 +75,8 @@
                         <a class="nav-link" href="#">For Everyone</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Entertainment
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -101,35 +102,90 @@
 
 <main>
 
-    <div class="card text-center">
-        <div class="card-header">
-            Happy Women's Day
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Happy International Women's Day</h5>
-            <p class="card-text">I made this simple progressive web app to celebrate the International Women's Day.</p>
-            <a href="https://catcancode.gitlab.io/happywomenday/" class="btn btn-primary">Go there</a>
-        </div>
-        <div class="card-footer text-muted">
-            Last Visit: 2019 Jun 18
-        </div>
-    </div>
-    <hr>
-    <div class="card text-center">
-        <div class="card-header">
-            PR Points Calculator
-        </div>
-        <div class="card-body">
-            <h5 class="card-title">Calculate points relating to subclass 188, 189, 190 and 489 visas in Australia.</h5>
-            <p class="card-text">The criteria for the point system to migrate to Australia change overtime. This web app keeps track of the changes and helps you to calculate your points.</p>
-            <a href="pr.html" class="btn btn-primary">Go there</a>
-        </div>
-        <div class="card-footer text-muted">
-            Last Visit: 2019 Jun 18
+    <div class="container">
+        <h1>PR Points Calculator</h1>
+        ​Points criteria are assessed at the time of invitation. The numbers are based on the official <a
+            href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table">point
+        table</a>.
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#y2019">2019</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#y2020">2020</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#y2021">2021</a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane container active" id="y2019">
+                2019
+
+            </div>
+
+            <div class="tab-pane container fade" id="y2020">
+                <p>Recently published legislation introduces changes to the Points Test for General Skilled Migration
+                    visas
+                    commencing <strong>16 November 2019</strong><b>.</b><br/>
+                    These changes are relevant to existing Subclass 489,189 and 190 and the <strong>new Skilled Work
+                        Regional (Provisional) Subclass 491 visa</strong>, which will also commence in 16 November 2019.
+                </p>
+                <p>The changes to the points test will include:</p>
+                <ul>
+                    <li><strong>10 points</strong> for Specialist Educational qualifications. Currently 5 points.</li>
+                    <li><strong>10 points</strong> for applicants with a skilled spouse or de facto partner (under 45
+                        with
+                        Competent English, suitable skills assessment and with an occupation on the same skilled
+                        occupation
+                        list). Currently 5 points.
+                    </li>
+                    <li><strong>10 points</strong> for applicants who do not have a spouse or de facto partner or who
+                        have a
+                        spouse or de facto partner who is an Australian citizen or a Permanent resident
+                        <strong>(New)</strong></li>
+                    <li><strong>5 points</strong> for applicants with a spouse or de facto partner who has competent
+                        English<strong>
+                            (New)</strong></li>
+                    <li><strong>15 points</strong> for applicants who are nominated by a State or Territory government,
+                        or
+                        who are sponsored by a suitable family member. These points are relevant to applicants for a
+                        Subclass 489 visa or the new Subclass 491 visa. Currently 10 points.
+                    </li>
+                </ul>
+                <p>When all points except partner qualifications are equal, invitations will be ranked in the below
+                    order:</p>
+                <ul>
+                    <li>First: applicants with a skilled spouse or de facto partner.</li>
+                    <li>Equal First: applicants without a spouse or de facto partner.</li>
+                    <li>Second: applicants with a spouse or de facto partner who demonstrates Competent English but who
+                        does
+                        not have the skills to obtain skilled partner points.
+                    </li>
+                    <li>Third: Applicants with a spouse or de facto partner who is ineligible for either competent
+                        English
+                        or Skilled partner points.
+                    </li>
+                </ul>
+                <p>References: <a href="https://www.legislation.gov.au/Details/F2019L00578">Link 1</a>, <a
+                        href="https://www.legislation.gov.au/Details/F2019L00578/Explanatory%20Statement/Text">Link
+                    2</a>
+                </p>
+                <p><strong>I will construct the new calculator when the new rules published officially!</strong></p>
+            </div>
+            <div class="tab-pane container fade" id="y2021">
+                2021 is in the future!
+            </div>
         </div>
     </div>
 
+    </div>
 
+
+    <script src="js/pr.js"></script>
 </main>
 
 <footer>
