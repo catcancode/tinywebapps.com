@@ -16,3 +16,7 @@ function sum() {
         + pr_naati + pr_regional_aus + pr_partner + pr_state_nomination + pr_regional_nomination;
     document.getElementById("pr_sum_points").innerText = sum;
 }
+
+function printReport() {
+    window.print();
+}
