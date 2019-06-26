@@ -111,17 +111,55 @@
 
 <main>
 
-    <div class="card text-center">
-        <div class="card-header">
-            ReactJS tips
+    <div class="container">
+        <h1>ReactJS Tips</h1>
+        A collection of my tips for developing web apps with ReactJS framework.
+        <br/>
+        <br/>
+
+        <div class="card">
+            <div class="card-header">
+                <h5>'Closing' a web application properly</h5>
+                (Last Edit: 26 Jun 2019)
+            </div>
+            <div class="card-body">
+                <p class="card-text text-justify">
+                    For desktop applications, it is very common to have the options to close the application such as (X button or quit menu option).
+                    'Closing' a web application is much more complicated than that. The action of closing a web app can be triggered through many
+                    different ways such as closing the browser, closing the browser's tab, refreshing the page, or clicking the back button.
+                    Although it is complicated, it is very important to handle the closing process of web app properly.
+                    Because, not shutting down the web app properly leads to unexpected outcomes for the users such as not saved or
+                    synchronized user data or unwanted behaviors relating to the authentication.
+                    <br/><br/>
+                    I have also recently noticed that the online banking system, such as ING bank, shows a confirm box to let users know that
+                    they are logging out of the system whenever they try to navigate away from the website. This serves two purposes:
+                    (1) it provides security for the user account; and (2) it provides the users with information that gives them the peace of mind.
+                    <br/><br/>
+                    Overall, it is important from many perspectives to properly handling the close action of the web applications. I will show you how to
+                    handle the close option in the web apps that use the <a href="https://reactjs.org/">ReactJS framework</a> and the <a href="https://github.com/ReactTraining/react-router">react-router</a> library.
+                    <br/><br/>
+                    If you are clicking the back button to move between pages within the application (not back from the homepage to an external URL),
+                    react-router provides the <a href="https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/api/Prompt.md">Prompt component</a> that can handle this situation.
+                    There are also options to use custom modals for the prompt, such as those in
+                    <a href="https://medium.com/@michaelchan_13570/using-react-router-v4-prompt-with-custom-modal-component-ca839f5faf39">link1</a>
+                    and <a href="https://www.npmjs.com/package/react-router-navigation-prompt">link2</a>
+                    <br/><br/>
+                    However, the Prompt component of the react-router library does not handle backing to an external URL nor closing the entire web page
+                    (references: <a href="https://github.com/ReactTraining/react-router/issues/5875">link1</a>,
+                    <a href="https://stackoverflow.com/questions/32841757/detecting-user-leaving-page-with-react-router">link2</a>).
+                    <br/><br/>
+                    I have written the sourcecode to handle closing the web application in many situations such as clicking back button, refreshing page, closing tab
+                    or even closing the browser.
+                    I use two JavaScript events on the window to implement this feature: <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onpopstate">onpopstate</a> and
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowEventHandlers/onbeforeunload">onbeforeunload</a>.
+                    This code can be put in the main component of your ReactJS web app.
+                    <br/>
+                    <script src="https://gist.github.com/catcancode/d839e2f616ce96a7d13a9a24e4342ef5.js"></script>
+                </p>
+            </div>
         </div>
-        <div class="card-body">
-            <h5 class="card-title">ReactJS tips</h5>
-            <p class="card-text">The best tips to make web apps with ReactJS.</p>
-            <a href="reactjs.html" class="btn btn-primary">Go there</a>
-        </div>
+        <hr>
     </div>
-    <hr>
 
 </main>
 
