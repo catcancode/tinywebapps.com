@@ -119,6 +119,40 @@
 
         <div class="card">
             <div class="card-header">
+                <h5>Migrating create-react-app project from JavaScript to TypeScript</h5>
+                (Last Edit: 04 Jul 2019)
+            </div>
+            <div class="card-body">
+                <p class="card-text text-justify">
+                    Migrating your existing ReactJS project created by create-react-app from JavaScript to TypeScript is not as hard as it seems to be.
+                    <br/><br/>
+                    Firstly, you need to make sure that the version of the react-scripts in your project is at least 2.1.0 or higher.
+                    This will simplify the migration process. You can find out what react-scripts version you are using in your project
+                    by checking the corresponding item in package.json file.
+                    If the react-scripts' version is outdated, you can update it using the instructions in this
+                    <a href="https://facebook.github.io/create-react-app/docs/updating-to-new-releases">link</a>.
+                    <br/><br/>
+                    The next step is to add TypeScript support to your project following the instruction in this
+                    <a href="https://facebook.github.io/create-react-app/docs/adding-typescript">link</a>.
+                    Then rename any JavaScript file to be a TypeScript file (e.g. src/index.js to src/index.tsx).
+                    When you rebuild your project with at least one TypeScript file in it, the tsconfig.json file will be generated automatically.
+                    <br/><br/>
+                    Finally, you can convert other JavaScript files in your project into TypeScript files. I recommend to do this for one file at a time to
+                    fix the compiling errors.
+                    Normally, you can fix the import errors by installing new types for your packages (e.g.,  npm install --save @types/react-router for react-router).
+                    You should also have a look at the minimum transition steps in this
+                    <a href="https://github.com/microsoft/TypeScript-React-Conversion-Guide">link</a>. Although the instructions in the link is for generic ReactJS app not from
+                    create-react-app, the minimum transition steps in it are still valid to have a look.
+                    <br/><br/>
+                    When you finish converting all the JavaScript files, you have successfully migrated your create-react-app project from JavaScript to TypeScript.
+                    This will make your project more scalable and maintainable.
+                </p>
+            </div>
+        </div>
+        <hr>
+
+        <div class="card">
+            <div class="card-header">
                 <h5>'Closing' a web application properly</h5>
                 (Last Edit: 26 Jun 2019)
             </div>
